@@ -8,7 +8,11 @@
   height: 100vh;
   padding: 20px;
   box-sizing: border-box;
-  background-color: #f2f2f2;
+  /* background-color: #f2f2f2; */
+}
+
+.life-clock-container {
+  background-image: linear-gradient(to bottom right, white, #cccccc);
 }
 
 .progress-bar {
@@ -41,4 +45,22 @@
   100% {
     background-color: #3498db;
   }
+}
+
+.quote-container {
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+#quote {
+  display: block;
+  font-style: italic;
+  color: rgb(39, 39, 39); /* Set the font color */
+}
+
+#quote span {
+  font-weight: bold;
+  color: black; /* Set the font color */
 }
