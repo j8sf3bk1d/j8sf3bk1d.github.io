@@ -1,0 +1,44 @@
+.life-clock-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  width: 100%;
+  height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #f2f2f2;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 20px;
+  background-color: #ccc;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+.progress-fill {
+  height: 100%;
+  background-color: #3498db;
+  border-radius: 5px;
+  width: 0;
+  transition: width 0.5s linear;
+}
+
+.pulse {
+  animation: pulseEffect 0.5s linear;
+}
+
+@keyframes pulseEffect {
+  0% {
+    background-color: #3498db;
+  }
+  30% {
+    background-color: #ffffff;
+  }
+  100% {
+    background-color: #3498db;
+  }
+}
