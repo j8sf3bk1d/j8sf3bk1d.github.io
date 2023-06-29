@@ -1,4 +1,4 @@
-const duration = 1000; // Duration in milliseconds (1 second)
+const duration = 500; // Duration in milliseconds (1 second)
 
 function updateProgress() {
   const birthDate = new Date(document.getElementById('birth-date').value);
@@ -208,12 +208,12 @@ function fadeOut(element) {
       element.style.display = 'none';
       setTimeout(function () {
         displayRandomQuote();
-      }, 100); 
+      }, 100); // 1 second delay before fading in the next quote
     }
 
     element.style.opacity = opacity;
     opacity -= 0.05;
-  }, 50); 
+  }, 50); // Adjust the interval for a smoother fade-out effect
 }
 
 // Initial quote display
