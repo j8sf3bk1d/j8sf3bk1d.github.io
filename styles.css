@@ -11,6 +11,17 @@
   /* background-color: #f2f2f2; */
 }
 
+.input-container {
+  display: flex;
+  justify-content: center;
+}
+
+.field-wrapper {
+  flex: 1;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .life-clock-container {
   background-image: linear-gradient(to bottom right, white, #cccccc);
 }
@@ -28,11 +39,11 @@
   background-color: #3498db;
   border-radius: 5px;
   width: 0;
-  transition: width 0.5s linear;
+  transition: width 0.75s ease-out;
 }
 
 .pulse {
-  animation: pulseEffect 0.5s linear;
+  animation: pulseEffect 0.3s linear;
 }
 
 @keyframes pulseEffect {
@@ -40,7 +51,7 @@
     background-color: #3498db;
   }
   30% {
-    background-color: #ffffff;
+    background-color: #aacee7;
   }
   100% {
     background-color: #3498db;
